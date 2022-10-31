@@ -1,1 +1,422 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+  
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
+/** FRONT PAGE **/
+header {
+  display: grid; 
+  grid-template-columns: 1fr 2fr ;
+  color: white; 
+  font-weight: bold;
+}
+
+header img {
+ width: 75%; 
+ padding-left: 5%;
+}
+
+.mobile__nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.mobile__nav li {
+  padding-bottom: 5%;
+}
+
+    /**hamburger menu**/
+.hamburger__icon {
+  display: block;
+  text-align: right;
+  padding-right: 2%;
+  font-size: 25px;
+  cursor: pointer;
+  color: #042a50;
+}
+
+.mobile__nav {
+  height: 100%;
+  width: 0; 
+  position: fixed;
+  z-index: 1;
+  background-color: #042a50;
+  overflow-x: hidden;
+  transition: .5s;
+}
+
+.mobile_content {
+  position: relative;
+  text-align: center; 
+  top: 25%; 
+  width: 100%; 
+}
+
+.mobile_content a:hover {
+  color:#4f97c3;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px; 
+  right: 45px; 
+  font-size: 60px; 
+  color: white; 
+  cursor: pointer;
+}
+
+.desktop__nav {
+  display: none;
+}
+    /**end of hamburger menu*/
+.hero__image {
+  background-image: url("../images/pleasure_island.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh; 
+}
+
+.text__image {
+  font-size: 35px;
+  width: 100%;
+  padding: 8%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px grey;
+}
+
+.image__btn {
+  text-decoration: none;
+  background-color: #1a3e4c;
+  padding: 3%;
+  font-size: 15px;
+  color: white;
+}
+
+.image__btn:hover {
+  background-color: #4f97c3;
+}
+
+/**MAIN AREA **/
+main {
+  font-size: 1.3rem;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  text-align: center;
+  height: 2%;
+  margin-bottom: 3%;
+}
+
+.email, .contact, .information{
+  padding: 10%; 
+  font-size: 1.2rem;
+  color: white;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.email{
+  background-color: #042a50;
+}
+
+.information, .contact {
+  background-color: #4f97c3;
+}
+
+.email:hover, .contact:hover, .information:hover {
+  opacity: .7; 
+}
+
+.visit {
+  text-align: justify;
+  padding: 1% 5%;
+  font-size: 20px;
+}
+
+.visit h2 {
+  text-align: center;
+}
+
+.main {
+  margin: 5%; 
+}
+
+  /*WHERE TO EAT, WHERE TO STAY, EVENTS, and WHERE TO PLAY*/
+
+
+.restaurant, .stay, .play, .events {
+  background-image: url("../images/restaurant__image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh; 
+}
+
+.restaurant {
+  background-image: url("../images/restaurant__image.jpg");
+
+}
+.stay {
+  background-image: url("../images/hotel__image.jpg"); 
+
+}
+.play {
+  background-image: url("../images/play___image.jpg");
+
+}
+
+.events {
+  background-image: url("../images/events__image.jpg");
+}
+
+
+
+.hero__text {
+  font-size: 4rem;
+  text-align: center;
+  color: white; 
+  padding: 5%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+.container img {
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+  height: 100%;;
+}
+
+.container__box {
+  position: relative;
+}
+
+.container__box:hover {
+  opacity: .9;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+  background-color: #042a50;
+  padding: 2%;
+}
+
+.main-text {
+  padding: 2% 10%;
+  text-align: center; 
+}
+
+.play_boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+.play_boxes img{
+  max-width: 100%;
+  height: 100%; 
+  border-radius: 10px;
+}
+
+.image__event {
+  max-width: 100%;
+  padding: 5% 20%; 
+}
+/*
+
+
+
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  opacity: .8;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 10px;
+}
+
+.restaurant_box:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+*/
+
+/*footer*/
+
+footer {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.new__footer {
+  display: block;
+  color: white; 
+  padding: 2%;
+  text-align: center;
+  background-color: #4f97c3;
+  
+}
+
+.footer__bottom{
+  background-color: #042a50;
+  color: white;
+  padding: 4%;
+  text-align: center;
+}
+
+footer input, .submit {
+  padding: .5%;
+}
+
+.submit {
+  background-color: #4f97c3;
+}
+
+.fa {
+  text-decoration: none;
+  padding-left: 2%;
+  display: block;
+  font-size: 100px;
+  color: white;
+}
+
+.fa:hover {
+  color: #4f97c3;
+}
+
+@media screen and (min-width: 600px){
+  .hamburger__icon, .mobile__nav {
+    display: none;
+  }
+ 
+  header img {
+    width: 50%; 
+    padding-left: 5%;
+   }
+
+   .text__image {
+    font-size: 40px;
+   }
+
+   /**desktop navigation**/
+
+  .desktop__nav {
+    padding: 3%;
+    text-align: right;
+    display: block;
+    font-size: 15px ;
+  }
+
+  .desktop__nav li {
+    display: inline-block;
+    padding-left: 2%;
+  }
+  .desktop__nav li a:hover {
+    color: #042a50 !important;
+  }
+
+  .desktop__index li a {
+    color: white !important; 
+  }
+
+  .desktop__nav li a {
+    text-decoration: none;
+    color: #042a50;
+    font-weight: bold;
+  }
+
+  /**cONTAINER FOR PAGES*/
+  .container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+
+  .play_boxes {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+
+  }
+/**main**/
+   .visit {
+    padding: 5% 18%;
+   }
+  
+   .image__btn {
+     padding: 1%;
+   }
+   
+ 
+}
+
+@media screen and (min-width: 1400px){
+  .text__image {
+    padding: 10%;
+    font-size: 40px;
+  }
+
+  .desktop__nav {
+    font-size: 30px;
+}
+
+  header img {
+    width: 75%;
+}
+
+.image__btn {
+  padding: 2%;
+  font-size: 20px;
+}
+
+}
